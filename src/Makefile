@@ -1,5 +1,6 @@
-CC:=riscv64-linux-gnu-gcc
-OBJDUMP:=riscv64-linux-gnu-objdump
+PREFIX := riscv64-unknown-elf-
+CC := $(PREFIX)gcc
+OBJDUMP := $(PREFIX)objdump
 
 CFLAGS:=-O -g -fno-pic -fno-inline -mcmodel=medlow -mabi=ilp32 -march=rv32im -Wall -static -nostdinc -nostartfiles -nodefaultlibs -nostdlib
 
