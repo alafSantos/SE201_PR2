@@ -36,7 +36,6 @@ int insertion()
 	}
 
     for(i = 0; i < SIZE; i++){
-        // printf("%d: %d\n", i+1, buf[i]);
         printf("%d\n", buf[i]);
     }
 
