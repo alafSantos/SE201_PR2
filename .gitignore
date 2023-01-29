@@ -1,3 +1,4 @@
 src/*.elf
 !src/insertion-sort.elf
 src/*.bin
+src/a.out
