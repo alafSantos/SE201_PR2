@@ -45,10 +45,10 @@ int main()
 	return buf[0];
 }
 
-/*int _start()
+int _start()
 {
   int x = main();
   asm volatile ("li a7, 10; ecall"); // exit system call
   return x;
-}*/
+}
 
