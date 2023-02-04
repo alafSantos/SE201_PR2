@@ -11,5 +11,8 @@ all: insertion-sort.elf
 insertion-sort.elf: insertion-sort.c
 	$(CC) $(CFLAGS) -o $@ $<
 
+insertion-sort-counters.elf: insertion-sort.c
+	$(CC) $(CFLAGS) -o $@ $<
+
 clean:
 	rm -f insertion-sort.elf
