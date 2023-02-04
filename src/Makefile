@@ -1,4 +1,5 @@
 PREFIX := riscv64-unknown-elf-
+SYSGCC := $(CC)
 CC := $(PREFIX)gcc
 OBJDUMP := $(PREFIX)objdump
 
@@ -11,8 +12,8 @@ all: insertion-sort.elf
 insertion-sort.elf: insertion-sort.c
 	$(CC) $(CFLAGS) -o $@ $<
 
-insertion-sort-counters.elf: insertion-sort.c
-	$(CC) $(CFLAGS) -o $@ $<
+insertion-sort-counters.elf: insertion-sort-counters.c
+	$(SYSGCC) -o $@ $<
 
 clean:
 	rm -f insertion-sort.elf
